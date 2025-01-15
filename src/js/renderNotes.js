@@ -6,7 +6,7 @@ const renderNotes = ()=> {
         notesContainer.innerHTML = "";
         const reversedNotesArray = notesList.slice().reverse();
 
-        reversedNotesArray.array.forEach(note => {
+        reversedNotesArray.forEach(note => {
             // create elements
             const noteCard = document.createElement("div");
             const noteSubject = document.createElement("span");
@@ -24,7 +24,7 @@ const renderNotes = ()=> {
             detailsToolContainer.append(dateSubjectContainer, editDeleteContainer);
             noteCard.append(noteText);
             dateSubjectContainer.append(noteSubject, noteDate);
-            editDeleteContainer.append(editButton,deleteButton);
+            editDeleteContainer.append(editButton, deleteButton);
 
             //  inserting notes data
             noteSubject.textContent = note.subject;

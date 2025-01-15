@@ -1,4 +1,5 @@
 import { v4 as uuidv4 } from 'uuid';
+import storeNotes from './storeNotes.js';
 
 export const generateRandomNumber = ()=> {
     // math.random() * (max - min + 1) + min
@@ -21,7 +22,7 @@ export const generateRandomNumber = ()=> {
     
     
     
-    // storeNotes();
+    storeNotes(notesArray);
 };
 
 export default addNotes
